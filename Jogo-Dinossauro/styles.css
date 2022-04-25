@@ -28,3 +28,26 @@ body {
   bottom: 0;
   background-image: url('./assets/img/cactus.png');
 }
+
+.game-over {
+  text-align: center;
+  color: #666;
+  margin: 50px 0;
+  font-family: arial;
+}
+
+.score {
+  text-align: center;
+  color: #666;
+  margin: 50px 0;
+  font-family: arial;
+}
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
