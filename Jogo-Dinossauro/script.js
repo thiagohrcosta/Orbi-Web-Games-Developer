@@ -13,6 +13,10 @@ function handleKeyUp(event) {
   }
 }
 
+function continueGame() {
+  document.location.reload(true);
+}
+
 function jump() {
   isJumping = true;
 
@@ -58,6 +62,7 @@ function createCactus() {
       clearInterval(leftTimer);
       isGameOver = true;
       document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1>';
+      document.body.innerHTML += '<button class="btn-continue" onclick="continueGame()">Continuar</button>';
     } else {
       cactusPosition -= 10;
       cactus.style.left = cactusPosition + 'px';
